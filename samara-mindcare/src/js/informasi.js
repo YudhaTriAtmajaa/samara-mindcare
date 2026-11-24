@@ -65,7 +65,7 @@ function modKesehatan() {
         el('h1', { text: 'Kesehatan Mental & Perawatan Diri Remaja' }),
         el('p', { class: 'mod-quote', text: '“Menjaga perasaan sama pentingnya dengan menjaga tubuh.”' }),
       ]),
-      el('div', { class: 'photo-card sm' }, [foto('public/img/kesehatan-mental.png'), el('span', { class: 'cap', text: 'Healthy Mind, Bright Future' })]),
+      el('div', { class: 'photo-card sm' }, [foto('public/img/mental.png'), el('span', { class: 'cap', text: 'Healthy Mind, Bright Future' })]),
     ]),
     el('div', { class: 'sub-head' }, [el('span', { class: 'ic-circle' }, [ik('bulb')]), el('h2', { text: 'Edukasi Dasar' })]),
     el('div', { class: 'poin-grid' }, [
@@ -103,7 +103,7 @@ function modBullying() {
         el('p', { class: 'mod-sub', text: 'Sekolah yang aman dimulai dari sikap kita satu sama lain.' }),
         el('p', { class: 'mod-p', text: 'Perundungan bukanlah bagian wajar dari masa pendewasaan. Setiap siswa SMA Muhammadiyah 2 Samarinda berhak atas rasa aman, dihargai identitasnya, serta bebas berpendapat tanpa bayang-bayang ketakutan.' }),
       ]),
-      el('div', { class: 'photo-card md' }, [foto('public/img/anti-bullying.png'), el('span', { class: 'cap' }, [ik('leaf'), 'Hindari Budaya Perundungan, Ciptakan Lingkungan Aman & Ramah'])]),
+      el('div', { class: 'photo-card md' }, [foto('public/img/bullying.png'), el('span', { class: 'cap' }, [ik('leaf'), 'Hindari Budaya Perundungan, Ciptakan Lingkungan Aman & Ramah'])]),
     ]),
     el('p', { class: 'pillar-lbl', text: 'PILAR PEMAHAMAN' }),
     el('div', { class: 'sub-head', style: 'margin-top:6px' }, [el('h2', { text: 'Edukasi Dasar Perundungan' }), el('span', { class: 'right', text: '5 Esensi Penting yang Wajib Dipahami' })]),
@@ -161,7 +161,7 @@ function modRokok() {
       el('div', { class: 'status-card' }, [el('span', { class: 'icon-box' }, [ik('heart')]), el('div', {}, [el('small', { text: 'Status Sekolah' }), el('b', { text: 'KTR Bebas Nikotin' })])]),
     ]),
     el('div', { class: 'two-split' }, [
-      el('div', { class: 'photo-card tall' }, [foto('public/img/no-rokok.png'),
+      el('div', { class: 'photo-card tall' }, [foto('public/img/rokok.png'),
         el('div', { class: 'cap2' }, [el('small', { text: 'SAY NO TO CIGARETTE' }), el('b', { text: 'Generasi Cerdas Menjaga Stamina & Fokus Belajar' })])]),
       el('div', { class: 'clinic' }, [
         el('span', { class: 'mod-label', text: 'KENYATAAN KLINIS' }), el('h3', { text: 'Masa Perkembangan Otak Hingga Usia 25 Tahun' }),
