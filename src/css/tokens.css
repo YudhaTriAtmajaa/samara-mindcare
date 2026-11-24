@@ -1,0 +1,102 @@
+/* Design tokens SAMARA MindCare - semua nilai visual didefinisikan di sini */
+:root {
+  /* Warna */
+  --green-700: #62801a;
+  --green-800: #536b15;
+  --green-100: #e8f5c4;
+  --green-50: #f1f9dc;
+  --orange-500: #f9a010;
+  --orange-100: #fde8cc;
+  --cream-50: #fef8ef;
+  --cream-100: #fcf1da;
+  --cream-200: #f6e7c6;
+  --white: #ffffff;
+  --ink-900: #1f1b0e;
+  --ink-600: #5b5648;
+  --ink-400: #8a8575;
+  --line: #efe6d2;
+  --danger: #b3261e;
+
+  /* Font */
+  --font-heading: 'Manrope', system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* Ukuran font */
+  --fs-h1-hero: 56px;
+  --fs-h1-page: 48px;
+  --fs-h2-xl: 40px;
+  --fs-h2: 30px;
+  --fs-card-title: 19px;
+  --fs-body-lg: 16px;
+  --fs-body: 14px;
+  --fs-small: 13px;
+  --fs-xs: 12px;
+  --fs-badge: 10.5px;
+
+  /* Line-height & weight */
+  --lh-tight: 1.1;
+  --lh-heading: 1.2;
+  --lh-body: 1.65;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --ls-heading: -0.02em;
+  --ls-badge: 0.08em;
+
+  /* Radius */
+  --r-bar: 32px;
+  --r-card: 24px;
+  --r-input: 16px;
+  --r-icon: 14px;
+  --r-pill: 999px;
+
+  /* Bayangan */
+  --sh-soft: 0 6px 24px rgba(98, 128, 26, 0.08);
+  --sh-bar: 0 4px 18px rgba(31, 27, 14, 0.1);
+  --sh-card: 0 2px 14px rgba(31, 27, 14, 0.06);
+  --sh-green: 0 6px 16px rgba(98, 128, 26, 0.32);
+  --sh-orange: 0 6px 16px rgba(249, 160, 16, 0.38);
+
+  /* Jarak */
+  --gap-s: 8px;
+  --gap-m: 16px;
+  --gap-l: 24px;
+  --gap-xl: 48px;
+  --container: 1200px;
+
+  /* Token tambahan: Pusat Informasi & Login Admin */
+  --font-serif: 'Instrument Serif', 'Playfair Display', Georgia, serif;
+  --font-arab: 'Amiri', 'Scheherazade New', serif;
+  --green-800: #5b7a18;
+  --green-900: #4f6b12;
+  --green-200: #e3f2b8;
+  --sand-100: #f1ead8;
+  --sand-50: #f6f1e6;
+  --peach-100: #feebdd;
+  --brown-700: #8a4b08;
+  --fs-h1-modul: 40px;
+  --fs-h2-section: 24px;
+  --fs-arab: 38px;
+  --fs-login-title: 25px;
+  --fs-login-btn: 18px;
+  --fs-quote: 17px;
+  --r-panel: 40px;
+  --r-topic: 28px;
+  --r-spirit: 32px;
+  --sh-login: 0 30px 70px rgba(98, 128, 26, 0.12), 0 6px 20px rgba(31, 27, 14, 0.06);
+}
+
+/* Token tambahan: panel admin */
+:root {
+  --olive-900: #2e3b10; --olive-800: #4d6300; --olive-600: #647d1a; --olive-400: #acc54d;
+  --lime-300: #d1eb6e; --lime-200: #daef8b; --lime-150: #e3f3a8; --lime-100: #e2f09d;
+  --orange-400: #ffb866; --peach-200: #ffddba; --pink-100: #ffdad6; --red-700: #ba1a1a;
+  --wajib-red: #ae363d; --brown-badge: #7b5326; --brown-700b: #8a5200; --amber-300: #ffd77a;
+  --sand-200: #f6eed4; --cream-tile: #fcf3d9; --panel: #fffefb; --page-bg: #fff9ed; --line-soft: #f3eedf;
+  --bg-admin: linear-gradient(135deg, #f7f7d7 0%, #fff9ed 38%, #fff5e6 100%);
+  --r-side: 40px; --r-panel-adm: 56px; --r-card-adm: 32px; --r-inner: 24px; --r-tile: 20px;
+  --fs-h1-adm: 40px; --fs-stat: 48px; --fs-th: 12px; --fs-td: 13px;
+  --side-w: 318px; --sh-hover: 0 10px 28px rgba(77, 99, 0, 0.12);
+}

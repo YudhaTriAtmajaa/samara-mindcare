@@ -1,0 +1,8 @@
+# Konfigurasi minimal Supabase CLI.
+# kirim-laporan dipanggil siswa tanpa login dengan kunci publik "sb_publishable_...", yang BUKAN JWT.
+# Jika "Verify JWT" aktif, gateway menolak setiap kiriman (401) dan siswa melihat pesan
+# "laporan belum berhasil terkirim". Fungsi ini dilindungi reCAPTCHA + pembatasan di database.
+project_id = "samara-mindcare"
+
+[functions.kirim-laporan]
+verify_jwt = false

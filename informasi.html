@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <script src="/splash.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pusat Informasi - SAMARA MindCare</title>
+  <meta name="description" content="Akses wawasan terpercaya mengenai kesehatan emosional, batasan pertemanan sehat, serta panduan menghadapi tantangan masa remaja.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Instrument+Serif:ital@1&family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- CSS dimuat langsung di head agar tidak ada kilatan HTML tanpa gaya -->
+  <link rel="stylesheet" href="/src/css/tokens.css">
+  <link rel="stylesheet" href="/src/css/base.css">
+  <link rel="stylesheet" href="/src/css/components.css">
+  <link rel="stylesheet" href="/src/css/skeleton.css">
+  <link rel="stylesheet" href="/src/css/transition.css">
+  <link rel="stylesheet" href="/src/css/informasi.css">
+  <script type="module" src="/src/js/informasi.js"></script>
+</head>
+<body>
+<div class="splash" id="splash" aria-hidden="true"><div class="splash-in"><div class="splash-logo"><img src="/logo/logo-stacked-sm.png" alt="" width="420" height="407"></div><h2 class="splash-t">Selamat datang di SAMARA MindCare</h2><p class="splash-s">Tempat kamu bercerita, didengar dengan empati, dan dijaga kerahasiaannya.</p><div class="splash-bar"><i></i></div></div></div>
+<div class="pg-skel" id="pg-skel" aria-hidden="true"><div class="in"><div class="nav"><div class="skl skl-l" style="width:200px;height:24px;"></div><div class="skl skl-l" style="width:380px;height:24px;"></div><div class="skl skl-p" style="width:110px;height:34px;"></div></div><div class="hero"><div class="skl-col" style="gap:16px"><div class="skl skl-p" style="width:160px;height:26px;"></div><div class="skl skl-h" style="width:85%;height:44px;"></div><div class="skl skl-h" style="width:65%;height:44px;"></div><div class="skl skl-l" style="width:100%;height:12px;"></div><div class="skl skl-l" style="width:95%;height:12px;"></div><div class="skl skl-l" style="width:80%;height:12px;"></div><div class="skl skl-p" style="width:170px;height:46px;margin-top:8px"></div></div><div class="skl skl-r" style="width:100%;height:320px;border-radius:36px"></div></div><div class="skl-grid skl-g3"><div class="skl-card"><div class="skl-col"><div class="skl skl-c" style="width:48px;height:48px;"></div><div class="skl skl-h" style="width:60%;height:18px;"></div><div class="skl skl-l" style="width:100%;height:12px;"></div><div class="skl skl-l" style="width:85%;height:12px;"></div></div></div><div class="skl-card"><div class="skl-col"><div class="skl skl-c" style="width:48px;height:48px;"></div><div class="skl skl-h" style="width:60%;height:18px;"></div><div class="skl skl-l" style="width:100%;height:12px;"></div><div class="skl skl-l" style="width:85%;height:12px;"></div></div></div><div class="skl-card"><div class="skl-col"><div class="skl skl-c" style="width:48px;height:48px;"></div><div class="skl skl-h" style="width:60%;height:18px;"></div><div class="skl skl-l" style="width:100%;height:12px;"></div><div class="skl skl-l" style="width:85%;height:12px;"></div></div></div></div></div></div><noscript><style>.pg-skel{display:none}</style></noscript>
+<div class="page-shell">
+  <div class="blob" style="left:-60px;top:60px;width:460px;height:300px"></div>
+  <div class="blob" style="right:-80px;top:40px;width:420px;height:300px"></div>
+  <div id="navbar" data-active="informasi"></div>
+
+  <main class="is-awal" id="info-main">
+    <section class="page-head info-head">
+      <span class="badge"><span class="dot"></span>Pustaka Literasi Siswa &amp; Pendampingan Sebaya</span>
+      <h1>Pusat Informasi &amp; <span class="serif">Pengetahuan Siswa</span></h1>
+      <p>Akses wawasan terpercaya mengenai kesehatan emosional, batasan pertemanan sehat, serta panduan menghadapi tantangan masa remaja dalam nuansa teduh dan suportif.</p>
+    </section>
+
+    <div class="topic-bar">
+      <p class="pick-label">Pilih Topik Informasi</p>
+      <span class="count-chip" id="topic-count" aria-live="polite">Topik 3 dari 3</span>
+    </div>
+    <section class="grid-3" id="topic-grid" aria-label="Pilihan topik"></section>
+
+    <!-- Konten topik dirender oleh src/js/informasi.js -->
+    <section class="info-panel" id="info-panel" aria-live="polite" hidden></section>
+  </main>
+
+  <div id="footer"></div>
+</div>
+</body>
+</html>

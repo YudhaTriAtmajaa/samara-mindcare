@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <script src="/splash.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layanan Laporan - SAMARA MindCare</title>
+  <meta name="description" content="Sampaikan cerita atau informasi secara aman, rahasia, dan terlindungi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- CSS dimuat langsung di head agar tidak ada kilatan HTML tanpa gaya -->
+  <link rel="stylesheet" href="/src/css/tokens.css">
+  <link rel="stylesheet" href="/src/css/base.css">
+  <link rel="stylesheet" href="/src/css/components.css">
+  <link rel="stylesheet" href="/src/css/skeleton.css">
+  <link rel="stylesheet" href="/src/css/transition.css">
+  <script type="module" src="/src/js/ui.js"></script>
+  <script type="module" src="/src/js/lapor.js"></script>
+</head>
+<body>
+<div class="splash" id="splash" aria-hidden="true"><div class="splash-in"><div class="splash-logo"><img src="/logo/logo-stacked-sm.png" alt="" width="420" height="407"></div><h2 class="splash-t">Selamat datang di SAMARA MindCare</h2><p class="splash-s">Tempat kamu bercerita, didengar dengan empati, dan dijaga kerahasiaannya.</p><div class="splash-bar"><i></i></div></div></div>
+<div class="pg-skel" id="pg-skel" aria-hidden="true"><div class="in"><div class="nav"><div class="skl skl-l" style="width:200px;height:24px;"></div><div class="skl skl-l" style="width:380px;height:24px;"></div><div class="skl skl-p" style="width:110px;height:34px;"></div></div><div class="hero"><div class="skl-col" style="gap:16px"><div class="skl skl-p" style="width:160px;height:26px;"></div><div class="skl skl-h" style="width:85%;height:44px;"></div><div class="skl skl-h" style="width:65%;height:44px;"></div><div class="skl skl-l" style="width:100%;height:12px;"></div><div class="skl skl-l" style="width:95%;height:12px;"></div><div class="skl skl-l" style="width:80%;height:12px;"></div><div class="skl skl-p" style="width:170px;height:46px;margin-top:8px"></div></div><div class="skl skl-r" style="width:100%;height:320px;border-radius:36px"></div></div><div class="skl-grid skl-g3"><div class="skl-card"><div class="skl-col"><div class="skl skl-c" style="width:48px;height:48px;"></div><div class="skl skl-h" style="width:60%;height:18px;"></div><div class="skl skl-l" style="width:100%;height:12px;"></div><div class="skl skl-l" style="width:85%;height:12px;"></div></div></div><div class="skl-card"><div class="skl-col"><div class="skl skl-c" style="width:48px;height:48px;"></div><div class="skl skl-h" style="width:60%;height:18px;"></div><div class="skl skl-l" style="width:100%;height:12px;"></div><div class="skl skl-l" style="width:85%;height:12px;"></div></div></div><div class="skl-card"><div class="skl-col"><div class="skl skl-c" style="width:48px;height:48px;"></div><div class="skl skl-h" style="width:60%;height:18px;"></div><div class="skl skl-l" style="width:100%;height:12px;"></div><div class="skl skl-l" style="width:85%;height:12px;"></div></div></div></div></div></div><noscript><style>.pg-skel{display:none}</style></noscript>
+<div class="page-shell">
+  <div class="blob" style="right:-60px;top:100px;width:420px;height:380px"></div>
+  <div id="navbar" data-active="layanan"></div>
+
+  <main>
+    <section class="page-head">
+      <span class="badge"><i data-ic="shield"></i>Layanan Pelaporan Siswa • Aman &amp; Rahasia</span>
+      <h1>Sampaikan Cerita atau Informasi Secara Aman</h1>
+      <p>Ruang hening dan penuh perlindungan untuk setiap siswa SMA Muhammadiyah 2 Samarinda. Suaramu berharga, didengar dengan empati, dan tidak ada penghakiman.</p>
+      <div class="chip-row">
+        <span class="chip"><i data-ic="eyeoff"></i>Tanpa Akun &amp; Jejak IP</span>
+        <span class="chip"><i data-ic="lock"></i>Kerahasiaan Terjaga</span>
+        <span class="chip" id="chip-guru" hidden><i data-ic="cap"></i>Guru SMA Muhammadiyah 2</span>
+      </div>
+    </section>
+
+    <p class="pick-label">Pilih Ranah Laporan</p>
+    <section class="grid-3" aria-label="Kategori laporan">
+      <article class="cat-card" data-kat="mental"><span class="tag"><i data-ic="checkcircle"></i>Kategori Terpilih</span>
+        <div class="head"><span class="icon-box"><i data-ic="mind"></i></span><h3>Kesehatan Mental &amp; Beban Pikiran</h3></div>
+        <p>Kecemasan berlebih, kejenuhan belajar ekstrem, stres ujian, atau rasa terisolasi yang membutuhkan tempat bercerita tanpa prasangka.</p>
+        <button type="button" class="btn btn-cream pick-btn" aria-pressed="false">Pilih Kategori Ini</button></article>
+      <article class="cat-card" data-kat="bullying"><span class="tag"><i data-ic="checkcircle"></i>Kategori Terpilih</span>
+        <div class="head"><span class="icon-box"><i data-ic="shield"></i></span><h3>Laporan Perundungan (Bullying)</h3></div>
+        <p>Perilaku pengucilan kelompok, perlakuan merendahkan verbal/fisik, intimidasi siber, atau pemerasan di lingkungan sekolah.</p>
+        <button type="button" class="btn btn-cream pick-btn" aria-pressed="false">Pilih Kategori Ini</button></article>
+      <article class="cat-card" data-kat="rokok"><span class="tag"><i data-ic="checkcircle"></i>Kategori Terpilih</span>
+        <div class="head"><span class="icon-box"><i data-ic="smokeoff"></i></span><h3>Pencegahan Rokok &amp; Vape</h3></div>
+        <p>Informasi mengenai penggunaan rokok konvensional maupun rokok elektrik/vape di toilet, area tersembunyi, atau sekitar pagar madrasah.</p>
+        <button type="button" class="btn btn-cream pick-btn" aria-pressed="false">Pilih Kategori Ini</button></article>
+    </section>
+
+    <!-- Keadaan B: form dirender oleh lapor.js -->
+    <div id="form-area" hidden></div>
+
+    <!-- Keadaan C: sukses -->
+    <section id="sukses-area" hidden>
+      <div class="success-card">
+        <span class="badge badge-cream"><i data-ic="shield"></i><span style="text-transform:none;letter-spacing:0;font-size:12px;font-weight:600">Ruang Aman &amp; Terlindungi</span></span>
+        <div class="check-ring"><span class="core"><i data-ic="check"></i></span><span class="leaf"><i data-ic="leaf"></i></span></div>
+        <h2>Laporan berhasil disampaikan</h2>
+        <p>Terima kasih telah mempercayai SAMARA sebagai ruang untuk menyampaikan informasi. Langkahmu sangat berarti untuk menjaga lingkungan sekolah yang nyaman, aman, dan saling menghargai sesama peserta didik SMA Muhammadiyah 2 Samarinda.</p>
+        <a class="btn btn-green" href="/index.html"><i data-ic="home"></i> Kembali ke Beranda</a>
+      </div>
+    </section>
+
+    <section class="info-pair">
+      <article class="info-card"><div class="top"><span class="icon-box"><i data-ic="handshake"></i></span>PRINSIP PEMULIHAN</div><h3>Bagaimana Laporanmu Ditindaklanjuti?</h3><p>Laporanmu akan ditangani dengan cara yang adil dan tidak menghukum. Keselamatan dan perasaanmu jadi yang utama, dan laporanmu tetap dirahasiakan.</p></article>
+      <article class="info-card"><div class="top"><span class="icon-box"><i data-ic="handshake"></i></span>DUKUNGAN LANJUTAN</div><h3>Butuh Bicara Tatap Muka?</h3><p>Kamu tidak harus menghadapinya sendirian. Ceritakan pada guru atau teman yang kamu percaya, mereka bisa membantu mendampingi dan mencarikan dukungan yang kamu butuhkan.</p></article>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+</div>
+</body>
+</html>

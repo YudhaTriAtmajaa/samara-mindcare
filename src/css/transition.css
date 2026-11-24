@@ -1,0 +1,28 @@
+/* Perpindahan halaman publik yang mulus (tanpa skeleton) */
+
+/* 1. Navigasi lintas-dokumen memakai View Transitions (Chrome/Edge/Safari 18.2+). Peramban lain tetap
+      berpindah normal, hanya tanpa efek pudar. */
+@view-transition { navigation: auto; }
+
+/* Dua snapshot (lama & baru) dipudarkan dengan durasi sama; bagian yang identik seperti navbar, latar,
+   dan logo tampak diam, hanya isi halaman yang berganti. (Jangan beri view-transition-name pada #navbar:
+   pada sebagian peramban, transisi dibatalkan karena elemen sticky.) */
+::view-transition-group(root) { animation-duration: .15s; animation-timing-function: ease; }
+
+/* 2. Saat pindah halaman lewat klik, skeleton & splash tidak dipasang sama sekali */
+.nav-soft .pg-skel, .nav-soft .splash { display: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+}
+
+/* Tombol Masuk/Dashboard di navbar: label dipilih lewat kelas <html> yang dipasang public/splash.js */
+.lbl-dash { display: none; }
+.adm-on .lbl-masuk { display: none; }
+.adm-on .lbl-dash { display: inline; }
+
+/* Umpan balik instan saat menu diklik: garis kemajuan tipis di tepi atas layar */
+.nav-pending body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 3px; z-index: 10001; pointer-events: none;
+  background: var(--green-700, #4f6d12); transform-origin: left; transform: scaleX(.05); animation: nav-prog 6s cubic-bezier(.1, .6, .2, 1) forwards; }
+@keyframes nav-prog { to { transform: scaleX(.92); } }
+@media (prefers-reduced-motion: reduce) { .nav-pending body::before { animation: none; transform: scaleX(.6); } }
